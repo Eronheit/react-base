@@ -25,8 +25,11 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", "jsx"] }],
+    "no-use-before-define": "off",
+    "react/jsx-props-no-spreading": "off",
     "import/prefer-default-export": "off",
-    "no-use-before-define": "off"
+    "import/no-named-as-default-member": "off",
+    "import/no-named-as-default": "off"
   },
   "settings": {
     "import/resolver": {

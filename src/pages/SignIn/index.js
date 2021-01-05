@@ -1,15 +1,18 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Form, Input, Button, Typography } from 'antd';
 
+import AuthActions from '~/store/ducks/auth';
 import { Container } from './styles';
 
 const { Title } = Typography;
 
 const SignIn = () => {
+  const dispatch = useDispatch();
   const [form] = Form.useForm();
 
   const handleSignIn = async (values) => {
-    console.log(values);
+    dispatch(AuthActions.signInRequest(values));
   };
 
   return (
